@@ -1,0 +1,4 @@
+src/*.ttf
+src/*.otf
+.tmp-download/
+.tmp-build/

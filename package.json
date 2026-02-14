@@ -1,0 +1,49 @@
+{
+  "name": "@inherent.design/brand",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "Design tokens and web font package inherent.design projects.",
+  "license": "OFL-1.1",
+  "author": "inherent.design",
+  "exports": {
+    "./fonts/vars": {
+      "style": "./fonts/vars.css",
+      "default": "./fonts/vars.css"
+    },
+    "./fonts/en": {
+      "style": "./fonts/dist/en/index.css",
+      "default": "./fonts/dist/en/index.css"
+    },
+    "./fonts/zh": {
+      "style": "./fonts/dist/zh/index.css",
+      "default": "./fonts/dist/zh/index.css"
+    },
+    "./fonts/hi": {
+      "style": "./fonts/dist/hi/index.css",
+      "default": "./fonts/dist/hi/index.css"
+    },
+    "./styles": {
+      "style": "./styles.css",
+      "default": "./styles.css"
+    },
+    "./starwind": {
+      "style": "./starwind.css",
+      "default": "./starwind.css"
+    }
+  },
+  "files": [
+    "fonts/vars.css",
+    "fonts/dist/",
+    "license/LICENSE*",
+    "styles.css",
+    "starwind.css"
+  ],
+  "scripts": {
+    "fonts:download": "node fonts/scripts/download.js",
+    "fonts:build": "node fonts/scripts/build.js",
+    "prepare": "pnpm run fonts:download && pnpm run fonts:build"
+  },
+  "devDependencies": {
+    "cn-font-split": "^7.4.1"
+  }
+}

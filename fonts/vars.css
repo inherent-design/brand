@@ -1,0 +1,27 @@
+:root {
+  --brand-font-serif: serif;
+  --brand-font-display: serif;
+  --brand-font-sans: system-ui, sans-serif;
+  --brand-font-mono: monospace;
+}
+
+:root:lang(en) {
+  --brand-font-serif: 'Charter', Georgia, serif;
+  --brand-font-display: 'Cormorant Garamond', 'Charter', Georgia, serif;
+  --brand-font-sans: 'Inter', system-ui, sans-serif;
+  --brand-font-mono: 'Commit Mono', monospace;
+}
+
+:root:lang(zh) {
+  --brand-font-serif: 'Charter', 'LXGW WenKai', serif;
+  --brand-font-display: 'Cormorant Garamond', 'LXGW WenKai', serif;
+  --brand-font-sans: 'Inter', 'Noto Sans SC', system-ui, sans-serif;
+  --brand-font-mono: 'Commit Mono', 'Sarasa Mono SC', monospace;
+}
+
+:root:lang(hi) {
+  --brand-font-serif: 'Charter', 'Tiro Devanagari Hindi', Georgia, serif;
+  --brand-font-display: 'Cormorant Garamond', 'Tiro Devanagari Hindi', Georgia, serif;
+  --brand-font-sans: 'Inter', 'Noto Sans Devanagari', system-ui, sans-serif;
+  --brand-font-mono: 'Commit Mono', 'Noto Sans Mono', monospace;
+}

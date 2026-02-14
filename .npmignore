@@ -1,0 +1,4 @@
+fonts/src/
+fonts/scripts/
+node_modules/
+*.tgz

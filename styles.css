@@ -1,0 +1,158 @@
+/*
+ * inherent.design -- Design Tokens (CSS Custom Properties)
+ *
+ * Source of truth for brand values shared across web (site/) and
+ * documents (brand/inherent.typ). When these change, update
+ * inherent.typ to match.
+ *
+ * Namespace: --brand-* prefix avoids collision with framework theme vars.
+ * Style Dictionary integration deferred -- hard-coded for Chrysalis phase.
+ */
+
+:root {
+  /* Colors */
+  --brand-text-dark: oklch(21.78% 0 0);
+  --brand-text-gray: oklch(55.10% 0.0234 264.4);
+  --brand-accent: oklch(54.61% 0.2152 262.9);
+  --brand-accent-hover: oklch(47.73% 0.1944 264.6);
+  --brand-code-bg: oklch(97.02% 0 0);
+
+  /* Typography -- Size */
+  --brand-text-xs: 0.75rem;
+  --brand-text-sm: 0.875rem;
+  --brand-text-base: 1.0625rem;
+  --brand-text-lg: 1.125rem;
+  --brand-text-xl: 1.25rem;
+  --brand-text-2xl: 1.5rem;
+  --brand-text-3xl: 1.875rem;
+  --brand-text-4xl: 2.25rem;
+  --brand-text-5xl: 3rem;
+
+  /* Typography -- Weight */
+  --brand-weight-light: 300;
+  --brand-weight-normal: 400;
+  --brand-weight-medium: 500;
+  --brand-weight-semibold: 600;
+  --brand-weight-bold: 700;
+  --brand-weight-black: 900;
+
+  /* Typography -- Tracking */
+  --brand-tracking-tight: -0.025em;
+  --brand-tracking-normal: 0em;
+  --brand-tracking-wide: 0.025em;
+
+  /* Typography -- Leading */
+  --brand-leading-tight: 1.2;
+  --brand-leading-snug: 1.375;
+  --brand-leading-normal: 1.5;
+  --brand-leading-relaxed: 1.65;
+
+  /* Spacing */
+  --brand-spacing-xs: 0.25rem;
+  --brand-spacing-sm: 0.5rem;
+  --brand-spacing-md: 1rem;
+  --brand-spacing-lg: 1.5rem;
+  --brand-spacing-xl: 2rem;
+  --brand-spacing-2xl: 3rem;
+
+  /* Layout */
+  --brand-max-width-content: 42rem;
+  --brand-max-width-page: 64rem;
+
+  /* Borders */
+  --brand-border-rule: 0.5px solid color-mix(in oklch, var(--brand-text-gray) 40%, transparent);
+  --brand-border-code: 0.5px solid var(--brand-text-gray);
+  --brand-radius-code: 4px;
+}
+
+@layer base {
+  /* HTML Elements */
+  h1 {
+    font-size: var(--brand-text-3xl);
+    font-weight: var(--brand-weight-bold);
+    letter-spacing: var(--brand-tracking-tight);
+    line-height: var(--brand-leading-tight);
+  }
+
+  h2 {
+    font-size: var(--brand-text-xl);
+    font-weight: var(--brand-weight-semibold);
+    line-height: var(--brand-leading-tight);
+  }
+
+  h3 {
+    font-size: var(--brand-text-lg);
+    font-weight: var(--brand-weight-semibold);
+    line-height: var(--brand-leading-snug);
+  }
+
+  h4 {
+    font-size: var(--brand-text-base);
+    font-weight: var(--brand-weight-semibold);
+    line-height: var(--brand-leading-snug);
+  }
+
+  h5, h6 {
+    font-size: var(--brand-text-sm);
+    font-weight: var(--brand-weight-medium);
+    line-height: var(--brand-leading-snug);
+  }
+
+  body {
+    font-size: var(--brand-text-base);
+    font-weight: var(--brand-weight-normal);
+  }
+
+  p, li {
+    line-height: var(--brand-leading-relaxed);
+  }
+
+  small {
+    font-size: var(--brand-text-sm);
+  }
+
+  code {
+    font-size: var(--brand-text-sm);
+  }
+
+  /* Semantic Roles */
+  .site-title {
+    font-family: var(--brand-font-display);
+    font-size: var(--brand-text-5xl);
+    font-weight: var(--brand-weight-black);
+    letter-spacing: var(--brand-tracking-tight);
+    line-height: var(--brand-leading-tight);
+  }
+
+  .site-subtitle {
+    font-size: var(--brand-text-base);
+    line-height: var(--brand-leading-normal);
+  }
+
+  .nav-text {
+    font-size: var(--brand-text-sm);
+    font-weight: var(--brand-weight-medium);
+  }
+
+  .cta {
+    font-weight: var(--brand-weight-black);
+    letter-spacing: var(--brand-tracking-wide);
+  }
+
+  .caption {
+    font-size: var(--brand-text-xs);
+    line-height: var(--brand-leading-normal);
+  }
+
+  .overline {
+    font-size: var(--brand-text-xs);
+    font-weight: var(--brand-weight-semibold);
+    letter-spacing: var(--brand-tracking-wide);
+    text-transform: uppercase;
+  }
+
+  .label {
+    font-size: var(--brand-text-sm);
+    font-weight: var(--brand-weight-medium);
+  }
+}
