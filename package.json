@@ -1,8 +1,8 @@
 {
   "name": "@inherent.design/brand",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
-  "description": "Design tokens and web font package inherent.design projects.",
+  "description": "Design tokens, web fonts, and Starwind components for inherent.design projects.",
   "license": "OFL-1.1",
   "author": "inherent.design",
   "exports": {
@@ -23,25 +23,33 @@
       "default": "./fonts/dist/hi/index.css"
     },
     "./styles": {
-      "style": "./styles.css",
-      "default": "./styles.css"
+      "style": "./styles/styles.css",
+      "default": "./styles/styles.css"
     },
-    "./starwind": {
-      "style": "./starwind.css",
-      "default": "./starwind.css"
-    }
+    "./styles/starwind": {
+      "style": "./styles/starwind.css",
+      "default": "./styles/starwind.css"
+    },
+    "./components/button": "./components/button/index.ts",
+    "./components/image": "./components/image/index.ts",
+    "./components/prose": "./components/prose/index.ts",
+    "./components/separator": "./components/separator/index.ts"
   },
   "files": [
     "fonts/vars.css",
     "fonts/dist/",
-    "license/LICENSE*",
-    "styles.css",
-    "starwind.css"
+    "styles/",
+    "components/",
+    "license/LICENSE*"
   ],
   "scripts": {
     "fonts:download": "node fonts/scripts/download.js",
     "fonts:build": "node fonts/scripts/build.js",
     "prepare": "pnpm run fonts:download && pnpm run fonts:build"
+  },
+  "peerDependencies": {
+    "astro": ">=5.0.0",
+    "tailwind-variants": ">=3.0.0"
   },
   "devDependencies": {
     "cn-font-split": "^7.4.1"
