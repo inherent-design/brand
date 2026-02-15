@@ -1,9 +1,9 @@
 {
   "name": "@inherent.design/brand",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "type": "module",
   "description": "Design tokens, web fonts, and Starwind components for inherent.design projects.",
-  "license": "OFL-1.1",
+  "license": "Apache-2.0",
   "author": "inherent.design",
   "exports": {
     "./fonts/vars": {
@@ -33,14 +33,16 @@
     "./components/button": "./components/button/index.ts",
     "./components/image": "./components/image/index.ts",
     "./components/prose": "./components/prose/index.ts",
-    "./components/separator": "./components/separator/index.ts"
+    "./components/separator": "./components/separator/index.ts",
+    "./typst": "./inherent.typ"
   },
   "files": [
     "fonts/vars.css",
     "fonts/dist/",
+    "fonts/licenses/LICENSE*",
     "styles/",
     "components/",
-    "license/LICENSE*"
+    "inherent.typ"
   ],
   "scripts": {
     "fonts:download": "node fonts/scripts/download.js",
