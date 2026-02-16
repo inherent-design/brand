@@ -1,6 +1,6 @@
 {
   "name": "@inherent.design/brand",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "type": "module",
   "description": "Design tokens, web fonts, and Starwind components for inherent.design projects.",
   "license": "Apache-2.0",
