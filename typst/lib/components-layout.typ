@@ -72,6 +72,7 @@
 
 #let card(body, title: none, fill: bg-card, stroke: border-thin + border) = {
   block(
+    breakable: false,
     width: 100%,
     fill: fill,
     stroke: stroke,

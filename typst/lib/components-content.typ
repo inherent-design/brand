@@ -9,6 +9,7 @@
   value-color: accent,
 ) = {
   block(
+    breakable: false,
     width: 100%,
     fill: fill,
     radius: radius-md,
@@ -31,6 +32,7 @@
   accent-color: accent,
 ) = {
   block(
+    breakable: false,
     width: 100%,
     stroke: (left: 3pt + accent-color, rest: border-thin + text-gray.lighten(70%)),
     radius: (right: radius-md),
@@ -62,7 +64,7 @@
   accent-color: accent,
   columns: 2,
 ) = {
-  block(below: sp-lg)[
+  block(breakable: false, below: sp-lg)[
     #text(size: ts-h3, weight: "bold", fill: accent-color)[#title]
     #v(sp-sm)
     #grid(
@@ -100,6 +102,7 @@
   }
 
   block(
+    breakable: false,
     width: 100%,
     fill: fill,
     stroke: (left: 3pt + stroke-color, rest: none),
@@ -132,6 +135,7 @@
   accent-color: accent,
 ) = {
   block(
+    breakable: false,
     width: 100%,
     inset: (left: sp-xl, right: sp-lg, y: sp-lg),
     above: sp-lg,

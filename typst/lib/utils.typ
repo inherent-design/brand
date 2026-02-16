@@ -25,3 +25,8 @@
   }
   current
 }
+
+#let render-lines(s) = {
+  if type(s) != str { return s }
+  s.trim().split("\n").join(linebreak())
+}

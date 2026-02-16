@@ -16,12 +16,10 @@
     footer: none,
     fill: fill,
   )[
-    // Accent bar at top
     #place(top + left, dx: -1.5in, dy: -2.5in)[
       #rect(width: 100% + 3in, height: 6pt, fill: accent-color)
     ]
 
-    // Title block
     #text(
       font: font-display,
       size: ts-display + 8pt,
@@ -42,7 +40,6 @@
       text(size: ts-body, fill: text-gray)[#date]
     }
 
-    // Company name at bottom
     #if company != none {
       align(bottom + left)[
         #text(size: 12pt, fill: text-gray)[#company]
@@ -60,6 +57,7 @@
   separator: [ | ],
 ) = {
   block(
+    breakable: false,
     width: 100%,
     inset: (y: sp-sm),
   )[
@@ -86,6 +84,7 @@
   ein-last4: none,
 ) = {
   block(
+    breakable: false,
     width: 100%,
     fill: bg-subtle,
     radius: radius-md,
@@ -125,7 +124,6 @@
     columns: (1fr, auto),
     column-gutter: sp-xl,
 
-    // Left: company identity
     {
       if company != none {
         text(size: 14pt, weight: "bold", fill: accent)[#company.at("name", default: "")]
@@ -144,7 +142,6 @@
       }
     },
 
-    // Right: invoice metadata
     {
       text(size: ts-h1, weight: "bold", fill: accent)[INVOICE]
       v(sp-sm)
@@ -164,7 +161,6 @@
 
   v(sp-lg)
 
-  // Client: "Bill To" section
   if client != none {
     text(size: ts-small, weight: "bold", fill: text-gray)[BILL TO]
     v(sp-xs)
@@ -187,17 +183,14 @@
   currency: "$",
   show-quantity: true,
 ) = {
-  // Calculate totals
   let subtotal = items.fold(0, (acc, item) => acc + item.at("amount", default: 0))
   let tax-amount = if tax-rate != none { subtotal * tax-rate } else { 0 }
   let total = subtotal + tax-amount
 
-  // Format currency
   let fmt(n) = {
     currency + str(calc.round(n, digits: 2))
   }
 
-  // Header + items
   table(
     columns: if show-quantity {
       (1fr, auto, auto, auto)
@@ -211,7 +204,6 @@
       (bottom: border-thin + text-gray.lighten(70%))
     },
 
-    // Header row
     ..if show-quantity {
       (
         table.cell(text(weight: "bold", size: ts-small)[Description]),
@@ -226,7 +218,6 @@
       )
     },
 
-    // Item rows
     ..items.map(item => {
       if show-quantity {
         (
@@ -244,7 +235,6 @@
     }).flatten(),
   )
 
-  // Totals section
   v(sp-sm)
   align(right)[
     #grid(
