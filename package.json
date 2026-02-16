@@ -34,7 +34,8 @@
     "./components/image": "./components/image/index.ts",
     "./components/prose": "./components/prose/index.ts",
     "./components/separator": "./components/separator/index.ts",
-    "./typst": "./typst/inherent.typ"
+    "./typst": "./typst/inherent.typ",
+    "./typst/prelude": "./typst/prelude.typ"
   },
   "files": [
     "fonts/vars.css",
