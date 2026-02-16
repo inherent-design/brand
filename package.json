@@ -39,6 +39,7 @@
   "files": [
     "fonts/vars.css",
     "fonts/dist/",
+    "fonts/src/typst/",
     "fonts/licenses/LICENSE*",
     "styles/",
     "components/",
