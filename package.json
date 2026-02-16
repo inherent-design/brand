@@ -1,6 +1,6 @@
 {
   "name": "@inherent.design/brand",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "type": "module",
   "description": "Design tokens, web fonts, and Starwind components for inherent.design projects.",
   "license": "Apache-2.0",
@@ -34,7 +34,7 @@
     "./components/image": "./components/image/index.ts",
     "./components/prose": "./components/prose/index.ts",
     "./components/separator": "./components/separator/index.ts",
-    "./typst": "./inherent.typ"
+    "./typst": "./typst/inherent.typ"
   },
   "files": [
     "fonts/vars.css",
@@ -42,7 +42,7 @@
     "fonts/licenses/LICENSE*",
     "styles/",
     "components/",
-    "inherent.typ"
+    "typst/"
   ],
   "scripts": {
     "fonts:download": "node fonts/scripts/download.js",

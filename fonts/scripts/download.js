@@ -44,6 +44,11 @@ const FONTS = [
     filename: 'inter-variable.ttf',
   },
   {
+    name: 'Inter Italic Variable',
+    url: 'https://github.com/google/fonts/raw/main/ofl/inter/Inter-Italic%5Bopsz%2Cwght%5D.ttf',
+    filename: 'inter-italic-variable.ttf',
+  },
+  {
     name: 'Commit Mono Variable',
     url: 'https://raw.githubusercontent.com/eigilnikolajsen/commit-mono/main/src/fonts/fontlab/CommitMonoV143-VF.ttf',
     filename: 'commit-mono-variable.ttf',
