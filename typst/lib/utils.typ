@@ -38,8 +38,8 @@
 // Client yaml path is passed via --input client-yaml=... by build.sh when the file exists
 #let load-defaults(values-file) = {
   let layers = (
-    yaml("/docs/engagements/defaults/contractor.yaml"),
-    yaml("/docs/engagements/defaults/federal.yaml"),
+    yaml("/engagements/defaults/contractor.yaml"),
+    yaml("/engagements/defaults/federal.yaml"),
   )
 
   // Client defaults: build.sh only passes client-yaml input when the file exists

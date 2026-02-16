@@ -1,0 +1,7 @@
+[package]
+name = "brand"
+version = "0.4.1"
+entrypoint = "prelude.typ"
+authors = ["inherent.design"]
+license = "Apache-2.0"
+description = "Design tokens, components, and layout primitives for inherent.design"
