@@ -1,5 +1,3 @@
-// Layout components: hero-section, two-column, sidebar-layout, card, card-grid
-
 #import "tokens.typ": sp-xs, sp-sm, sp-md, sp-lg, sp-xl, sp-2xl, sp-3xl, ts-display, ts-body, border-thin, border-thick, radius-md
 #import "colors.typ": accent, text-dark, text-gray, bg-card, border
 #import "typography.typ": font-display

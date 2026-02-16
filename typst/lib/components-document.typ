@@ -1,5 +1,3 @@
-// Document components: cover-page, contact-strip, registration-block, invoice-header, line-items-table
-
 #import "tokens.typ": sp-xs, sp-sm, sp-md, sp-lg, sp-xl, sp-2xl, sp-3xl, ts-display, ts-h1, ts-h2, ts-body, ts-small, ts-caption, border-thin, border-medium, border-thick, radius-md
 #import "colors.typ": accent, text-dark, text-gray, bg-subtle
 #import "typography.typ": font-display

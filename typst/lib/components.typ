@@ -1,5 +1,3 @@
-// Title block, info-table, signature-block, separator
-
 #import "colors.typ": accent, text-gray
 #import "typography.typ": font-display
 #import "tokens.typ": ts-h1, ts-body, sp-xs, sp-sm, sp-md, border-thin
@@ -49,7 +47,6 @@
   pdf.artifact(line(length: 100%, stroke: border-thin + text-gray.lighten(40%)))
 }
 
-// Re-export component modules (barrel file)
 #import "components-layout.typ": *
 #import "components-content.typ": *
 #import "components-document.typ": *

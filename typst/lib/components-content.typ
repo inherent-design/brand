@@ -1,5 +1,3 @@
-// Content components: metric-card, service-card, competency-block, callout-box, pull-quote
-
 #import "tokens.typ": sp-xs, sp-sm, sp-md, sp-lg, sp-xl, ts-h1, ts-h2, ts-h3, ts-h4, ts-body, ts-caption, border-thin, radius-md
 #import "colors.typ": accent, text-dark, text-gray, bg-subtle, success, warning, error, info
 
@@ -120,7 +118,6 @@
   ]
 }
 
-// Preset variants via .with()
 #let info-box = callout-box.with(variant: "info")
 #let warning-box = callout-box.with(variant: "warning")
 #let success-box = callout-box.with(variant: "success")
