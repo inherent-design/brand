@@ -1,5 +1,7 @@
 # @inherent.design/brand
 
+[![npm](https://img.shields.io/npm/v/@inherent.design/brand?style=flat&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@inherent.design/brand) [![License](https://img.shields.io/github/license/inherent-design/brand?style=flat)](LICENSE)
+
 Single source of truth for the inherent.design design language across print (Typst) and web (CSS/Astro).
 
 ## Quick Start
